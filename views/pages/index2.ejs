@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" type="" />
+
+    <title>TRUETASTE</title>
+  </head>
+
+  <body>
+    <ol>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li><%= place %></li>
+    </ol>
+
+    <ul>
+      <% result.forEach((item)=>{ %>
+      <li><%= item.name %></li>
+      <%}) %>
+    </ul>
+
+    <% result.forEach((item)=>{ %>
+    <div
+      class="item-div"
+      style="
+        background-color: #00efff3d;
+        width: 50%;
+        padding: 2rem;
+        margin: 2rem;
+      "
+    >
+      <h1><%= item.id %></h1>
+      <h2><%= item.name %></h2>
+      <p><%= item.description %></p>
+    </div>
+    <%}) %>
+  </body>
+</html>
